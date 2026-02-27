@@ -34,6 +34,7 @@ li a {
   border-radius: 5px;
 }
 .hamburger {
+  align-items: center;
   display: none;
   cursor: pointer;
   z-index: 1000;
