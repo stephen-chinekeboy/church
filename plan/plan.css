@@ -161,7 +161,7 @@ li a {
 
 @media (max-width: 480px) {
   .sec {
-    height: 100vh;
+    height: 80vh;
   }
   .hero {
     padding: 30px;
