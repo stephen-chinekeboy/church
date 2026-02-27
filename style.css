@@ -41,6 +41,7 @@ li a:hover {
 .hamburger {
   display: none;
   cursor: pointer;
+  align-items: center;
 }
 .bar {
   display: block;
