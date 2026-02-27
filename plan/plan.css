@@ -33,10 +33,24 @@ li a {
   padding: 10px 20px;
   border-radius: 5px;
 }
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.bar {
+  z-index: 1000;
+  display: block;
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+}
 /* hero section */
 .sec {
   background: url('/images/rear-view-excited-people-with-arms-raised-having-fun-while-watching-confetti-fireworks-front-stage-music-festival-copy-space.jpg');
-  background-position: right;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
@@ -58,7 +72,7 @@ li a {
 .hero {
   list-style: 50px;
   width: 100%;
-  z-index: 999;
+  z-index: 900;
   padding-left: 70px;
   color: white;
 }
@@ -161,7 +175,7 @@ li a {
 
 @media (max-width: 480px) {
   .sec {
-    height: 80vh;
+    height: 70vh;
   }
   .hero {
     padding: 30px;
@@ -206,5 +220,43 @@ li a {
   .midweek,
   .prayer {
     padding: 15px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  ul {
+    z-index: 999;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #764ba2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  li  {
+    margin: 16px 0;
+  }
+
+  ul.active {
+    left: 0;
   }
 }

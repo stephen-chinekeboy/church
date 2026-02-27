@@ -27,9 +27,62 @@ ul li {
 li a {
   text-decoration: none;
   color: white;
+  transition: 0.7s ease;
+}
+li a:hover {
+  color: orange;
 }
 .plan {
   background: orange;
   padding: 10px;
   border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #764ba2;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  li  {
+    margin: 16px 0;
+  }
+
+  ul.active {
+    left: 0;
+  }
 }
