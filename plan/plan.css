@@ -30,6 +30,181 @@ li a {
 }
 .plan {
   background: orange;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
+}
+/* hero section */
+.sec {
+  background: url('/images/rear-view-excited-people-with-arms-raised-having-fun-while-watching-confetti-fireworks-front-stage-music-festival-copy-space.jpg');
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  word-spacing: 5px;
+  position: relative;
+}
+.backdrop {
+  background:#764ba289;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.hero {
+  list-style: 50px;
+  width: 100%;
+  z-index: 999;
+  padding-left: 70px;
+  color: white;
+}
+.hero h1 {
+  font-size: 50px;
+  font-family: 'Poppins' , sans-serif;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  font-family: 'Open Sans';
+  width: 500px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.get {
+  background-color: orange;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: 'Open Sans';
+}
+.contact {
+  background-color: #764ba2;
+  padding: 10px 30px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  border-radius: 5px;
+}
+/* service section */
+
+.service {
+  background-color: #f5f5f5;
+  padding: 60px;
+}
+/* .service h2 {
+  width: 100%;
+} */
+.service-time {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 0px;
+}
+.service-line {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+.service-time h2 {
+  font-size: 25px;
+  font-family: 'Poppins' , sans-serif;
+  text-align: center;
+  width: 500px;
+}
+.sunday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 40px;
+}
+
+.sunday-svg,
+.midweek,
+.prayer {
+  display: flex;
+  gap: 10px;
+}
+.sunday-svg ,
+.midweek,
+.prayer {
+  background-color: #764ba2;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.sunday h3 {
+  font-family: 'Poppins' , sans-serif;
+  color: white;
+}
+.sunday-line,
+.mid-line , 
+.prayer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  margin: 10px 0px 10px 0px;
+}
+.sunday p {
+  font-family: 'Open Sans';
+  color: white;
+}
+.time {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .sec {
+    height: 100vh;
+  }
+  .hero {
+    padding: 30px;
+  }
+  .hero h1 {
+    font-size: 30px;
+    width: 240px;
+  }
+  .hero p {
+    font-size: 18px;
+    width: 260px;
+  }
+  .get  {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .contact {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* service section */
+  .service-line {
+    display: none;
+  }
+  .service-time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .media {
+    margin: 5px;
+    width: 50%;
+    height: 1px;
+    background-color: #333;
+  }
+  .sunday {
+    display: flex;
+    flex-direction: column;
+  }
+  .sunday-svg,
+  .midweek,
+  .prayer {
+    padding: 15px 30px;
+  }
 }
