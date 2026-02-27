@@ -8,12 +8,19 @@ header {
   background: #764ba2;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav ul {
   display: flex;
