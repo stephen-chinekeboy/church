@@ -29,7 +29,7 @@ li a {
   color: white;
   transition: 0.7s ease;
 }
-li a:hover {
+li .anchor:hover {
   color: orange;
 }
 .plan {
