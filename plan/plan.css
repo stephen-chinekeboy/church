@@ -169,9 +169,6 @@ li a {
   font-family: 'Open Sans';
   color: white;
 }
-.time {
-  text-align: center;
-}
 
 @media (max-width: 480px) {
   header {
