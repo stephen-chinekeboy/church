@@ -8,9 +8,9 @@ header {
   background: #764ba2;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
-  position: fixed;
+  /* position: fixed;
   left: 0;
-  right: 0;
+  right: 0; */
   z-index: 1000;
 }
 nav {
@@ -134,11 +134,17 @@ li .anchor:hover {
 }
 
 @media(max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  nav h1 {
+    font-size: 20px;
+  }
   .sec-1 {
-    height: 100vh;
+    height: 100%;
   }
   .hero {
-    padding-top: 90px;
+    padding: 40px;
   }
   .hero h1 {
     font-size: 30px;

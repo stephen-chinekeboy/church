@@ -10,9 +10,9 @@ header {
 
   padding: 20px;
   position: fixed;
-  z-index: 1000;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 nav {
   display: flex;
@@ -184,14 +184,14 @@ li a {
   }
 
   .sec {
-    height: 80vh;
+    height: 90vh;
   }
   .hero {
     padding: 30px;
   }
   .hero h1 {
-    font-size: 30px;
-    width: 240px;
+    font-size: 25px;
+    /* width: 240px; */
   }
   .hero p {
     font-size: 18px;
