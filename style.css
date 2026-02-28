@@ -10,8 +10,8 @@ header {
   font-family: 'Poppins', sans-serif;
   /* position: fixed;
   left: 0;
-  right: 0; */
-  /* z-index: 1000; */
+  right: 0;
+  z-index: 1000; */
 }
 nav {
   display: flex;
@@ -63,7 +63,7 @@ li .anchor:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -73,9 +73,11 @@ li .anchor:hover {
   word-spacing: 5px;
   position: relative;
 }
-.hero {
-  padding: 40px;
+.flex-container {
   z-index: 999;
+  padding: 110px 40px;
+}
+.hero {
   color: white;
   list-style: 50px;
 }
@@ -99,12 +101,10 @@ li .anchor:hover {
   width: 32%;
   height: 1px;
   background-color: #f2f2f2;
-  margin-top: 30px ;
+  margin: 30px 0;
 }
 .join { 
   color: white;
-  z-index: 999;
-  padding-left: 40px;
 }
 .join p {
   font-size: 20px;
@@ -142,10 +142,13 @@ li .anchor:hover {
     width: 200px;
   }
   .sec-1 {
-    height: 70vh;
+    height: 100%;
+  }
+  .flex-container {
+    padding: 60px 40px;
   }
   .hero {
-    padding: 20px;
+    /* padding: 20px; */
   }
   .hero h1 {
     font-size: 25px;
@@ -157,7 +160,7 @@ li .anchor:hover {
     width: 90%;
   }
   .join {
-    padding: 20px;
+    /* padding: 20px; */
   }
   .join p {
     font-size: 20px;
