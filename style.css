@@ -63,7 +63,7 @@ li .anchor:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,8 +74,14 @@ li .anchor:hover {
   position: relative;
 }
 .flex-container {
-  z-index: 999;
-  padding: 110px 40px;
+  /* z-index: 999; */
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+
 }
 .hero {
   color: white;
@@ -138,18 +144,10 @@ li .anchor:hover {
     padding: 5px;
   }
   nav h1 {
-    font-size: 18px;
+    font-size: 20px;
     width: 200px;
   }
-  .sec-1 {
-    height: 100%;
-  }
-  .flex-container {
-    padding: 60px 40px;
-  }
-  .hero {
-    /* padding: 20px; */
-  }
+
   .hero h1 {
     font-size: 25px;
   }
@@ -158,9 +156,6 @@ li .anchor:hover {
   }
   .hero-line {
     width: 90%;
-  }
-  .join {
-    /* padding: 20px; */
   }
   .join p {
     font-size: 20px;
