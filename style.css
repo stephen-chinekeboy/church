@@ -11,7 +11,7 @@ header {
   /* position: fixed;
   left: 0;
   right: 0; */
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 nav {
   display: flex;
@@ -125,7 +125,7 @@ li .anchor:hover {
   font-family: 'Open Sans';
 }
 .watch-link {
-  background-color: orange;
+  background-color: #764ba2;
   padding: 10px 25px;
   font-size: 20px;
   color: #e6e6e6;
@@ -141,25 +141,33 @@ li .anchor:hover {
     font-size: 20px;
   }
   .sec-1 {
-    height: 100%;
+    height: 100vh;
   }
   .hero {
-    padding: 40px;
+    padding: 20px;
   }
   .hero h1 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .hero p {
+    font-size: 16px;
   }
   .hero-line {
     width: 90%;
+  }
+  .join {
+    padding: 20px;
   }
   .join p {
     font-size: 20px;
   }
   .join-link {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px 20px;
   }
   .watch-link {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px 20px;
   }
 }
 
