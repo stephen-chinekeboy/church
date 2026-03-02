@@ -82,7 +82,7 @@ li a {
   color: white;
   z-index: 2;
   padding: 2rem;
-  width: 100%;
+  /* width: 100%; */
   height: calc(100vh - 80px);
   margin-top: 120px;
 }
@@ -193,7 +193,7 @@ li a {
     height: 100vh;
   }
   .hero {
-    margin-top: 10px;
+    margin-top: 140px;
   }
   .hero h1 {
     font-size: 25px;
