@@ -68,6 +68,7 @@ li a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,6 +185,10 @@ li a {
   nav h1 {
     font-size: 20px;
     width: 200px;
+  }
+
+  .flex-container {
+    min-height: 120vh;
   }
 
   .hero h1 {
