@@ -101,7 +101,7 @@ li .anchor:hover {
   color: #e6e6e6;
   margin-top: 10px;
   font-size: 18px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' , sans-serif;
 }
 .hero-line {
   width: 32%;
@@ -128,14 +128,14 @@ li .anchor:hover {
   font-size: 20px;
   color: #e6e6e6;
   border-radius: 5px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' , sans-serif;
 }
 .watch-link {
   background-color: #764ba2;
   padding: 10px 25px;
   font-size: 20px;
   color: #e6e6e6;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' , sans-serif;
   border-radius: 5px;
 }
 
@@ -196,7 +196,7 @@ li .anchor:hover {
   margin: 10px 0px 10px 0px;
 }
 .sunday p {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' , sans-serif;
   color: white;
 }
 /* about section*/
@@ -231,13 +231,95 @@ li .anchor:hover {
 }
 .about-line h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 25px;
+  font-size: 33px;
 }
 .about-text p{
   line-height: 25px;
   font-family: 'Open Sans';
 }
-@media(max-width: 480px) {
+
+/* latest */
+.latest {
+  background-color: #f5f5f5;
+  padding: 20px 60px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+}
+.heading h2 {
+  font-family: 'Poppins' , sans-serif;
+  font-size: 33px;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+}
+.heading-line {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+.sermon {
+  display: flex;
+  gap: 30px;
+  background-color: #764ba2;
+}
+.sermon-img,
+.sermon-text {
+  flex: 1;
+}
+.sermon-img {
+  width: 100%;
+  height: 100%;
+}
+.sermon-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  align-items: center;
+}
+.sermon-text {
+  background-color: #764ba2;
+  width: 100%;
+  padding: 60px 0;
+}
+.sermon-text h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+  font-size: 25px;
+}
+.sermon-line {
+  width: 100%;
+  height: 1px;
+  background-color: #f5f5f5;
+  margin: 10px 0;
+  width: 65%;
+}
+.sermon-text p {
+  font-family: 'Open Sans' , sans-serif;
+  font-size: 18px;
+  color: #f5f5f5;
+}
+.watch-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+.watch-button button {
+  padding: 20px 60px;
+  background: orange;
+  border: none;
+  border-radius: 10px;
+  color: #f5f5f5;
+  font-size: 18px;
+}
+@media (max-width: 480px) {
   header {
     padding: 5px;
   }
@@ -293,6 +375,42 @@ li .anchor:hover {
   /* about */
   .about-church {
     flex-direction: column;
+  }
+  /* latest section */
+  .heading-line {
+    display: none;
+  }
+  .heading {
+    flex-direction: column;
+  }
+  .heading h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .heading-line2 {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+  }
+  .sermon {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sermon-text {
+    padding: 0 20px;
+  }
+  .sermon-text h3 {
+    font-size: 20px;
+  }
+  .sermon-text p {
+    font-size: 15px;
+  }
+  .watch-button {
+    margin-top: 30px;
+  }
+  .watch-button button {
+    padding: 10px 30px;
+    font-size: 15px;
   }
 }
 
@@ -360,7 +478,7 @@ li .anchor:hover {
     flex-direction: column;
   }
 }
- 
+
 @media (max-width: 900px) {
   .hamburger {
     display: block;
