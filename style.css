@@ -476,7 +476,7 @@ li .anchor:hover {
     width: 50%;
   }
   .watch-button button {
-    padding: 15px 30px;
+    padding: 20px 35px;
   }
 }
 
@@ -508,6 +508,18 @@ li .anchor:hover {
 
   .about-church {
     flex-direction: column;
+  }
+
+  /* latest sermon */
+
+  .sermon-img {
+    width: 100%;
+    height: 100%;
+  }
+  .sermon-img img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
   }
 }
 
