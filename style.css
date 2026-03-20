@@ -139,13 +139,12 @@ li .anchor:hover {
   border-radius: 5px;
 }
 
+/* service section */
+
 .service {
   background-color: #f5f5f5;
   padding: 60px;
 }
-/* .service h2 {
-  width: 100%;
-} */
 .service-time {
   display: flex;
   align-items: center;
@@ -352,6 +351,9 @@ li .anchor:hover {
   .service-line {
     display: none;
   }
+  .service h2{
+    font-size: 30px;
+  }
   .service-time {
     display: flex;
     flex-direction: column;
@@ -376,6 +378,9 @@ li .anchor:hover {
   .about-church {
     flex-direction: column;
   }
+  .about h2{
+    font-size: 30px;
+  }
   /* latest section */
   .heading-line {
     display: none;
@@ -384,7 +389,7 @@ li .anchor:hover {
     flex-direction: column;
   }
   .heading h2 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
   }
   .heading-line2 {
@@ -425,7 +430,7 @@ li .anchor:hover {
   
   .media {
     background-color: #333;
-    width: 40%;
+    width: 50%;
     height: 1px;
     display: block;
   }
@@ -445,6 +450,33 @@ li .anchor:hover {
   /* about */
   .about-church {
     flex-direction: column;
+  }
+
+  /* latest sermon*/
+  .heading {
+    flex-direction: column;
+  }
+  .heading-line {
+    display: none;
+  }
+  .heading-line2 {
+    width: 50%;
+    height: 1px;
+    background-color: #333;
+  }
+  .sermon {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sermon-text {
+    padding: 30px 20px;
+  }
+  .sermon-line {
+    align-items: center;
+    width: 50%;
+  }
+  .watch-button button {
+    padding: 15px 30px;
   }
 }
 
